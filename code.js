@@ -16,8 +16,18 @@ function LocalPrintArray(chaine) {
 }
 
 // -- Développez votre code dans la fonction ContestResponse ci-après
-function ContestResponse() {
+function ContestResponse(chaine) {
   // Implémentez votre code ci-dessous
+  let convertNombreDeRestaurant = Number(nombreDeRestaurant)
+  let restaurant = input.slice(1);
+  
+  //let result = restaurantUn.split(' ')
+  //console.log(result);
+
+  let somme = 0;
+  
+  
+  
 }
 // -- Fin de votre code
 
