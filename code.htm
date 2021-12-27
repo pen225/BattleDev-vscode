@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+for (let i = 0; i < personneParTable.length; i++) {
+    let nombrePersonne = Number(personneParTable[i])
+    let vente = nombrePersonne * prixPersonnes;
+    // console.log(nombrePersonne);
+    if (nombrePersonne >= 10) {
+      vente = vente * 0.7; // -30%
+    }else if (nombrePersonne >= 6) {
+      vente = vente * 0.8; // -20%
+    }else if (nombrePersonne >= 4) {
+      vente = vente * 0.9; // -10%
+    }
+  
+    sommeVente += vente
+  }
+  console.log(Math.ceil(sommeVente));
+  
+}
+
+for (let i = 0; i < personneParTable.length; i++) {
+    let nombrePersonne = Number(personneParTable[i])
+    let vente = nombrePersonne * prixPersonnes
+    if (nombrePersonne >= 4) {
+    somme += (nombrePersonne * prixPersonnes) * (0.9);
+    }else if (nombrePersonne >= 6) {
+      somme +=  (nombrePersonne * prixPersonnes) * (0.8);
+    }else if (nombrePersonne >= 10) {
+      somme +=  (nombrePersonne * prixPersonnes) * (0.7);
+    }else{
+      somme +=  (nombrePersonne * prixPersonnes);
+    }
+    
+  }
+
+  console.log(somme);
+  
+}
+    </script>
+</body>
+</html>

@@ -18,15 +18,28 @@ function LocalPrintArray(chaine) {
 // -- Développez votre code dans la fonction ContestResponse ci-après
 function ContestResponse(chaine) {
   // Implémentez votre code ci-dessous
-  let convertNombreDeRestaurant = Number(nombreDeRestaurant)
-  let restaurant = input.slice(1);
-  
-  //let result = restaurantUn.split(' ')
-  //console.log(result);
+  let notes = input[0].split(' ');
+  let mesNotes = [];
+  let nombreDecopains = input[1];
+  let meilleurCopain = input[2];
+  let noteCopain = input.slice(3);
+  console.log(noteCopain);
 
-  let somme = 0;
-  
-  
+  for (let i = 0; i < notes.length; i++) {
+    mesNotes.push(Number(notes[i]));
+  }
+  let dist = 0;
+  for (let i = 0; i < noteCopain.length; i++) {
+    const note = input[i].split(' ');
+    let noteDesCopains = [];
+    for (let i = 0; i < noteDesCopains.length; i++) {
+      noteDesCopains.push(Number(notes[i]));
+      
+    }
+    
+  }
+  console.log(noteCopain);
+
   
 }
 // -- Fin de votre code
